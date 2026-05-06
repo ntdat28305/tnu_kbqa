@@ -23,7 +23,6 @@ from langchain_community.retrievers import BM25Retriever
 from langchain_qdrant import QdrantVectorStore
 from qdrant_client import QdrantClient
 from langchain_groq import ChatGroq
-from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_huggingface import HuggingFaceEmbeddings
 from flashrank import Ranker, RerankRequest
 
@@ -57,18 +56,31 @@ GROQ_MODELS = [
     "qwen/qwen3-32b",
 ]
 
-_groq_combinations = list(itertools.product(GROQ_API_KEYS, GROQ_MODELS))
+# Sắp xếp combinations theo thứ tự ưu tiên model (xịn → nhỏ)
+# Mỗi câu hỏi mới sẽ bắt đầu từ model đầu tiên (70b)
+# Ưu tiên model xịn trước, xài hết 3 key mới xuống model thấp hơn
+_groq_combinations = [
+    (api_key, model)
+    for model in GROQ_MODELS
+    for api_key in GROQ_API_KEYS
+]
 _current_combo_idx = 0
 
 print(f"🔑 Groq keys: {len(GROQ_API_KEYS)} | Models: {len(GROQ_MODELS)} | Combos: {len(_groq_combinations)}")
 
 
-def get_current_groq_llm():
+def get_groq_llm_at(idx: int):
+    """Lấy LLM tại vị trí idx trong combinations."""
     if not _groq_combinations:
         return None, "none"
-    api_key, model = _groq_combinations[_current_combo_idx]
+    api_key, model = _groq_combinations[idx % len(_groq_combinations)]
     return ChatGroq(api_key=api_key, model=model,
-                    temperature=0.1, max_tokens=2048), f"groq/{model}"
+                    temperature=0.1, max_tokens=2048,
+                    max_retries=0), f"groq/{model}"
+
+
+def get_current_groq_llm():
+    return get_groq_llm_at(_current_combo_idx)
 
 
 def rotate_groq():
@@ -78,13 +90,7 @@ def rotate_groq():
     print(f"🔄 Groq rotate → {model}")
 
 
-# ── Gemini fallback ───────────────────────────────────────────
-
-gemini_llm = ChatGoogleGenerativeAI(
-    model="gemini-2.5-flash",
-    google_api_key=os.getenv("GEMINI_API_KEY"),
-    temperature=0.1,
-)
+# Gemini đã bị tắt — dùng Groq rotation thay thế
 
 
 # ── Lazy singletons ───────────────────────────────────────────
@@ -496,37 +502,37 @@ def hybrid_search(query: str, top_k: int = 6) -> tuple[str, list[str]]:
 # ── Main RAG ──────────────────────────────────────────────────
 
 def run_rag(question: str) -> tuple[str, str]:
+    import time
     context, _ = hybrid_search(question)
 
     if not context.strip():
         return "Tôi không tìm thấy thông tin này trong tài liệu TNU-AIQA.", "none"
 
-    prompt = SUMMARY_PROMPT if detect_summary_intent(question) else PROMPT
+    prompt  = SUMMARY_PROMPT if detect_summary_intent(question) else PROMPT
+    n       = len(_groq_combinations)
+    attempt = 0
 
-    for _ in range(len(_groq_combinations)):
+    while True:
+        idx = attempt % n
         try:
-            llm, model_name = get_current_groq_llm()
+            llm, model_name = get_groq_llm_at(idx)
             chain  = prompt | llm | StrOutputParser()
             answer = chain.invoke({"context": context, "question": question})
             gc.collect()
             return answer, model_name
         except Exception as e:
             err = str(e).lower()
-            if any(k in err for k in ["429", "rate", "quota", "401",
-                                       "invalid", "authentication",
+            if any(k in err for k in ["429", "rate", "quota",
+                                       "401", "invalid", "authentication",
                                        "decommissioned", "deprecated"]):
-                rotate_groq()
+                attempt += 1
+                print(f"🔄 [{attempt}] rotate → {_groq_combinations[attempt % n][1]}")
+                # Sau 1 vòng đầy → chờ 10s rồi thử lại từ đầu
+                if attempt % n == 0:
+                    print(f"⏳ Hết {n} combos, chờ 10s...")
+                    time.sleep(10)
                 continue
             raise e
-
-    # Fallback Gemini
-    try:
-        print("🔀 Groq exhausted → Gemini fallback")
-        chain  = prompt | gemini_llm | StrOutputParser()
-        answer = chain.invoke({"context": context, "question": question})
-        return answer, "gemini-2.5-flash"
-    except Exception:
-        return "Hệ thống đang quá tải. Vui lòng thử lại sau.", "error"
 
 
 def run_rag_stream(question: str):
@@ -543,11 +549,15 @@ def run_rag_stream(question: str):
 
     prompt = SUMMARY_PROMPT if detect_summary_intent(question) else PROMPT
 
-    for _ in range(len(_groq_combinations)):
+    import time
+    n       = len(_groq_combinations)
+    attempt = 0
+
+    while True:
+        idx = attempt % n
         try:
-            llm, model_name = get_current_groq_llm()
+            llm, model_name = get_groq_llm_at(idx)
             chain = prompt | llm
-            # Stream từng chunk
             for chunk in chain.stream({"context": context, "question": question}):
                 token = chunk.content if hasattr(chunk, "content") else str(chunk)
                 if token:
@@ -556,21 +566,14 @@ def run_rag_stream(question: str):
             return
         except Exception as e:
             err = str(e).lower()
-            if any(k in err for k in ["429", "rate", "quota", "401",
-                                       "invalid", "authentication",
+            if any(k in err for k in ["429", "rate", "quota",
+                                       "401", "invalid", "authentication",
                                        "decommissioned", "deprecated"]):
-                rotate_groq()
+                attempt += 1
+                print(f"🔄 stream [{attempt}] rotate → {_groq_combinations[attempt % n][1]}")
+                if attempt % n == 0:
+                    print(f"⏳ Hết {n} combos, chờ 10s...")
+                    time.sleep(10)
                 continue
             yield {"type": "error", "content": str(e)}
             return
-
-    # Fallback Gemini stream
-    try:
-        chain = prompt | gemini_llm
-        for chunk in chain.stream({"context": context, "question": question}):
-            token = chunk.content if hasattr(chunk, "content") else str(chunk)
-            if token:
-                yield {"type": "token", "content": token}
-        yield {"type": "done", "sources": sources, "model_used": "gemini-2.5-flash"}
-    except Exception as e:
-        yield {"type": "error", "content": "Hệ thống đang quá tải. Vui lòng thử lại sau."}
