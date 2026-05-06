@@ -1,15 +1,17 @@
 import gc
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import StreamingResponse
 from dotenv import load_dotenv
 from app.schemas import ChatRequest, ChatResponse
-from app.agent import run_agent
+from app.agent import run_agent, run_agent_stream
 import psutil
 import os
+import json
 
 load_dotenv()
 
-app = FastAPI(title="TNU-AIQA Chatbot API", version="2.0.0")
+app = FastAPI(title="TNU-AIQA Chatbot API", version="2.1.0")
 
 app.add_middleware(
     CORSMiddleware,
@@ -21,7 +23,7 @@ app.add_middleware(
 
 @app.get("/")
 def health_check():
-    return {"status": "ok", "service": "TNU-AIQA KBQA v2 (Hybrid RAG + NetworkX KG)"}
+    return {"status": "ok", "service": "TNU-AIQA KBQA v2.1 (Hybrid RAG + Streaming)"}
 
 @app.post("/chat", response_model=ChatResponse)
 def chat(request: ChatRequest):
@@ -34,6 +36,31 @@ def chat(request: ChatRequest):
         )
     finally:
         gc.collect()
+
+@app.post("/chat/stream")
+def chat_stream(request: ChatRequest):
+    """
+    Streaming endpoint — trả về từng token ngay khi LLM generate.
+    Format: Server-Sent Events (SSE)
+    """
+    def generate():
+        try:
+            for chunk in run_agent_stream(request.message):
+                # SSE format: data: {...}\n\n
+                yield f"data: {json.dumps(chunk, ensure_ascii=False)}\n\n"
+        except Exception as e:
+            yield f"data: {json.dumps({'type': 'error', 'content': str(e)})}\n\n"
+        finally:
+            gc.collect()
+
+    return StreamingResponse(
+        generate(),
+        media_type="text/event-stream",
+        headers={
+            "Cache-Control": "no-cache",
+            "X-Accel-Buffering": "no",
+        }
+    )
 
 @app.get("/status")
 def status():

@@ -109,3 +109,31 @@ def run_agent(question: str) -> dict:
         "sources": sources,
         "model_used": model_used
     }
+
+def run_agent_stream(question: str):
+    """Streaming version của run_agent."""
+    from app.rag_chain import run_rag_stream, hybrid_search
+
+    question = question.strip()
+
+    # Kiểm tra greeting/off-topic/invalid
+    if not is_valid_question(question):
+        yield {"type": "token", "content": GREETING_RESPONSE}
+        yield {"type": "done", "sources": [], "model_used": "none (filtered)"}
+        return
+
+    if is_greeting(question):
+        yield {"type": "token", "content": GREETING_RESPONSE}
+        yield {"type": "done", "sources": [], "model_used": "none (greeting)"}
+        return
+
+    if is_off_topic(question):
+        yield {"type": "token", "content": OFF_TOPIC_RESPONSE}
+        yield {"type": "done", "sources": [], "model_used": "none (off-topic)"}
+        return
+
+    # Stream từ LLM
+    yield {"type": "status", "content": "🔍 Đang tìm kiếm tài liệu..."}
+
+    for chunk in run_rag_stream(question):
+        yield chunk

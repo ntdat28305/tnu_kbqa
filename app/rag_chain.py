@@ -527,3 +527,50 @@ def run_rag(question: str) -> tuple[str, str]:
         return answer, "gemini-2.5-flash"
     except Exception:
         return "Hệ thống đang quá tải. Vui lòng thử lại sau.", "error"
+
+
+def run_rag_stream(question: str):
+    """
+    Streaming version của run_rag.
+    Yield từng token ngay khi LLM generate.
+    """
+    context, sources = hybrid_search(question)
+
+    if not context.strip():
+        yield {"type": "token", "content": "Tôi không tìm thấy thông tin này trong tài liệu TNU-AIQA."}
+        yield {"type": "done", "sources": [], "model_used": "none"}
+        return
+
+    prompt = SUMMARY_PROMPT if detect_summary_intent(question) else PROMPT
+
+    for _ in range(len(_groq_combinations)):
+        try:
+            llm, model_name = get_current_groq_llm()
+            chain = prompt | llm
+            # Stream từng chunk
+            for chunk in chain.stream({"context": context, "question": question}):
+                token = chunk.content if hasattr(chunk, "content") else str(chunk)
+                if token:
+                    yield {"type": "token", "content": token}
+            yield {"type": "done", "sources": sources, "model_used": model_name}
+            return
+        except Exception as e:
+            err = str(e).lower()
+            if any(k in err for k in ["429", "rate", "quota", "401",
+                                       "invalid", "authentication",
+                                       "decommissioned", "deprecated"]):
+                rotate_groq()
+                continue
+            yield {"type": "error", "content": str(e)}
+            return
+
+    # Fallback Gemini stream
+    try:
+        chain = prompt | gemini_llm
+        for chunk in chain.stream({"context": context, "question": question}):
+            token = chunk.content if hasattr(chunk, "content") else str(chunk)
+            if token:
+                yield {"type": "token", "content": token}
+        yield {"type": "done", "sources": sources, "model_used": "gemini-2.5-flash"}
+    except Exception as e:
+        yield {"type": "error", "content": "Hệ thống đang quá tải. Vui lòng thử lại sau."}

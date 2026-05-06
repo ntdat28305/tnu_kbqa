@@ -17,7 +17,7 @@ st.caption("Hỗ trợ tra cứu thông tin về bảo đảm và kiểm định
 with st.sidebar:
     st.header("⚙️ Cấu hình")
     api_url = st.text_input("API URL", value=API_URL)
-    
+
     st.divider()
     st.header("🔍 Test nhanh")
     quick_tests = [
@@ -37,7 +37,6 @@ with st.sidebar:
         st.session_state.messages = []
         st.rerun()
 
-    # Kiểm tra API health
     st.divider()
     st.header("📡 Trạng thái API")
     try:
@@ -76,42 +75,80 @@ else:
 prompt = st.chat_input("Nhập câu hỏi về kiểm định chất lượng...") or question
 
 if prompt:
-    # Hiển thị câu hỏi
     st.session_state.messages.append({"role": "user", "content": prompt})
     with st.chat_message("user"):
         st.markdown(prompt)
 
-    # Gọi API
     with st.chat_message("assistant"):
-        with st.spinner("Đang tìm kiếm..."):
+        # Dùng streaming endpoint
+        answer_placeholder = st.empty()
+        full_answer = ""
+        sources     = []
+        model_used  = "unknown"
+
+        try:
+            with requests.post(
+                f"{api_url}/chat/stream",
+                json={"message": prompt, "session_id": "streamlit"},
+                stream=True,
+                timeout=60,
+            ) as response:
+                for line in response.iter_lines():
+                    if not line:
+                        continue
+                    # SSE format: "data: {...}"
+                    line = line.decode("utf-8")
+                    if not line.startswith("data: "):
+                        continue
+                    try:
+                        chunk = json.loads(line[6:])
+                    except Exception:
+                        continue
+
+                    if chunk["type"] == "token":
+                        full_answer += chunk["content"]
+                        answer_placeholder.markdown(full_answer + "▌")
+
+                    elif chunk["type"] == "status":
+                        if not full_answer:
+                            answer_placeholder.caption(chunk["content"])
+
+                    elif chunk["type"] == "done":
+                        sources    = chunk.get("sources", [])
+                        model_used = chunk.get("model_used", "unknown")
+                        break
+
+                    elif chunk["type"] == "error":
+                        full_answer = chunk.get("content", "Có lỗi xảy ra.")
+                        break
+
+        except Exception as e:
+            # Fallback về non-streaming nếu stream lỗi
             try:
-                response = requests.post(
+                r    = requests.post(
                     f"{api_url}/chat",
-                    json={"message": prompt, "session_id": "streamlit"},
-                    timeout=30
+                    json={"message": prompt},
+                    timeout=30,
                 )
-                data = response.json()
-                answer = data.get("answer", "Không có phản hồi")
-                sources = data.get("sources", [])
-                model_used = data.get("model_used", "unknown")
+                data       = r.json()
+                full_answer = data.get("answer", "Không có phản hồi")
+                sources     = data.get("sources", [])
+                model_used  = data.get("model_used", "unknown")
+            except Exception:
+                full_answer = f"❌ Lỗi kết nối API: {e}"
 
-                st.markdown(answer)
+        # Hiển thị kết quả cuối
+        answer_placeholder.markdown(full_answer)
 
-                if sources:
-                    with st.expander("📚 Nguồn tham khảo"):
-                        for i, src in enumerate(sources, 1):
-                            st.caption(f"{i}. {src}")
+        if sources:
+            with st.expander("📚 Nguồn tham khảo"):
+                for i, src in enumerate(sources, 1):
+                    st.caption(f"{i}. {src}")
+        st.caption(f"🤖 Model: `{model_used}`")
 
-                st.caption(f"🤖 Model: `{model_used}`")
-
-                st.session_state.messages.append({
-                    "role": "assistant",
-                    "content": answer,
-                    "sources": sources,
-                    "model_used": model_used
-                })
-
-            except requests.exceptions.ConnectionError:
-                st.error("❌ Không kết nối được API. Hãy chắc chắn uvicorn đang chạy!")
-            except Exception as e:
-                st.error(f"❌ Lỗi: {str(e)}")
+    st.session_state.messages.append({
+        "role":       "assistant",
+        "content":    full_answer,
+        "sources":    sources,
+        "model_used": model_used,
+    })
