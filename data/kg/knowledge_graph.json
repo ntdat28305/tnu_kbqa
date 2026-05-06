@@ -1,0 +1,1464 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "title": "Luat Giao duc Dai hoc 125.2025",
+      "doc_type": "luat",
+      "doc_number": "125/2025/QH15",
+      "issued_by": "Quốc hội",
+      "text_len": 51114,
+      "id": "Luat_Giao_duc_Dai_hoc_125_2025"
+    },
+    {
+      "title": "Nghi dinh 91.2026",
+      "doc_type": "nghi_dinh",
+      "doc_number": "91/2026/NĐ-CP",
+      "issued_by": "Chính phủ",
+      "text_len": 40972,
+      "id": "Nghi_dinh_91_2026"
+    },
+    {
+      "title": "Chương I",
+      "doc_type": "quy_dinh",
+      "doc_number": "04/2025/TT-BGD",
+      "issued_by": "Chính phủ",
+      "text_len": 52671,
+      "id": "Chương_I"
+    },
+    {
+      "title": "Quy dinh  So chuan, doi sanh chat luong giao duc Truong DHTN nam 2026 (Trinh ky)",
+      "doc_type": "quy_dinh",
+      "doc_number": "20/2026/TT-BGD",
+      "issued_by": "Chính phủ",
+      "text_len": 15051,
+      "id": "Quy_dinh__So_chuan__doi_sanh_chat_luong_giao_duc_Truong_DHTN"
+    },
+    {
+      "title": "Quy dinh He thong bao dam chat luong ben trong truong Dai hoc Tay Nguyen 2026",
+      "doc_type": "quy_dinh",
+      "doc_number": "125/2025/QH15",
+      "issued_by": "Bộ Chính trị",
+      "text_len": 38806,
+      "id": "Quy_dinh_He_thong_bao_dam_chat_luong_ben_trong_truong_Dai_ho"
+    },
+    {
+      "title": "Trường Đại học Tây Nguyên ban hành Quy định về Hệ thống bảo đảm chất lượng bên trọng (IQA system)",
+      "doc_type": "quy_dinh",
+      "doc_number": "",
+      "issued_by": "Trường Đại học Tây Nguyên",
+      "text_len": 6909,
+      "id": "Trường_Đại_học_Tây_Nguyên_ban_hành_Quy_định_về_Hệ_thống_bảo_"
+    },
+    {
+      "title": "“Nâng tầm Khung trình độ quốc gia: VQF – AQRF: Dấu mốc vàng đưa văn bằng Việt Nam vào ‘bản đồ’ trình độ khu vực\"",
+      "doc_type": "tai_lieu",
+      "doc_number": "",
+      "issued_by": "",
+      "text_len": 2827,
+      "id": "_Nâng_tầm_Khung_trình_độ_quốc_gia__VQF___AQRF__Dấu_mốc_vàng_"
+    },
+    {
+      "title": "AUN-QA IQA Management Toolkit (BỘ CÔNG CỤ QUẢN LÝ BẢO ĐẢM CHẤT LƯỢNG BÊN TRONG AUN-QA)",
+      "doc_type": "tai_lieu",
+      "doc_number": "",
+      "issued_by": "",
+      "text_len": 170,
+      "id": "AUN-QA_IQA_Management_Toolkit__BỘ_CÔNG_CỤ_QUẢN_LÝ_BẢO_ĐẢM_CH"
+    },
+    {
+      "title": "Building a Data Management System and AI Assistant for Quality Assurance at Tay Nguyen University",
+      "doc_type": "tai_lieu",
+      "doc_number": "",
+      "issued_by": "",
+      "text_len": 16878,
+      "id": "Building_a_Data_Management_System_and_AI_Assistant_for_Quali"
+    },
+    {
+      "title": "Hội thảo khoa học “Bảo đảm và Kiểm định chất lượng giáo dục trong kỷ nguyên số: Đổi mới – Hiệu quả – Phát triển bền vững”",
+      "doc_type": "tai_lieu",
+      "doc_number": "",
+      "issued_by": "Trường Đại học Tây Nguyên",
+      "text_len": 1960,
+      "id": "Hội_thảo_khoa_học__Bảo_đảm_và_Kiểm_định_chất_lượng_giáo_dục_"
+    },
+    {
+      "title": "Trường Đại học Tây Nguyên phối hợp tổ chức Workshop 2 về ứng dụng AI trong bảo đảm chất lượng giáo dục đại học",
+      "doc_type": "tai_lieu",
+      "doc_number": "",
+      "issued_by": "Trường Đại học Tây Nguyên",
+      "text_len": 2838,
+      "id": "Trường_Đại_học_Tây_Nguyên_phối_hợp_tổ_chức_Workshop_2_về_ứng"
+    },
+    {
+      "title": "Thong tu 01.2024. Ve ban hanh Chuan CSGD",
+      "doc_type": "thong_tu",
+      "doc_number": "01/2024/TT-BGD",
+      "issued_by": "Bộ Giáo dục và Đào tạo",
+      "text_len": 67379,
+      "id": "Thong_tu_01_2024__Ve_ban_hanh_Chuan_CSGD"
+    },
+    {
+      "title": "Thong tu 04.2025 Ve kiem dinh CTDT",
+      "doc_type": "thong_tu",
+      "doc_number": "04/2025/TT-BGD",
+      "issued_by": "Chính phủ",
+      "text_len": 180149,
+      "id": "Thong_tu_04_2025_Ve_kiem_dinh_CTDT"
+    },
+    {
+      "title": "Thong tu 20.2026 Ve kiem #U0111inh CSGD",
+      "doc_type": "thong_tu",
+      "doc_number": "20/2026/TT-BGD",
+      "issued_by": "Bộ Giáo dục và Đào tạo",
+      "text_len": 237582,
+      "id": "Thong_tu_20_2026_Ve_kiem__U0111inh_CSGD"
+    },
+    {
+      "title": "THÔNG TƯ MỚI: Thông tư 20/2026/TT-BGDĐT về kiểm định chất lượng cơ sở giáo dục đại học",
+      "doc_type": "thong_tu",
+      "doc_number": "20/2026/TT-BGD",
+      "issued_by": "Bộ Giáo dục và Đào tạo",
+      "text_len": 2828,
+      "id": "THÔNG_TƯ_MỚI__Thông_tư_20_2026_TT-BGDĐT_về_kiểm_định_chất_lư"
+    },
+    {
+      "title": "Thông tư số 04/2025/TT-BGDĐT quy định về kiểm định chương trình đào tạo trình độ đại học (Thông tư 04) thay thế cho các Thông tư liên quan về kiểm định chương trình đào tạo đại học hiện hành.",
+      "doc_type": "thong_tu",
+      "doc_number": "04/2025/TT-BGD",
+      "issued_by": "Bộ Giáo dục và Đào tạo",
+      "text_len": 6368,
+      "id": "Thông_tư_số_04_2025_TT-BGDĐT_quy_định_về_kiểm_định_chương_tr"
+    },
+    {
+      "title": "Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam đã được sửa đổi",
+      "doc_type": "external",
+      "external": true,
+      "id": "ext::HIẾNPHÁPNƯỚCCỘNGHÒAXÃHỘICHỦNGHĨAVIỆTNAMĐ"
+    },
+    {
+      "title": "203/2025/QH15",
+      "doc_type": "external",
+      "external": true,
+      "id": "ext::203/2025/QH15"
+    },
+    {
+      "title": "43/2019/QH14",
+      "doc_type": "external",
+      "external": true,
+      "id": "ext::43/2019/QH14"
+    },
+    {
+      "title": "Luật Giáo dục đại học năm 2012",
+      "doc_type": "external",
+      "external": true,
+      "id": "ext::LUẬTGIÁODỤCĐẠIHỌCNĂM2012"
+    },
+    {
+      "title": "Quyết định này “Quy định về công tác Khảo thí của Trường Đại học Tây Nguyên”",
+      "doc_type": "external",
+      "external": true,
+      "id": "ext::QUYẾTĐỊNHNÀY“QUYĐỊNHVỀCÔNGTÁCKHẢOTHÍCỦAT"
+    },
+    {
+      "title": "Quyết định số 298/CP ngày 11 tháng 11 năm 1977 của Hội đồng Chính phủ về việc th",
+      "doc_type": "external",
+      "external": true,
+      "id": "ext::QUYẾTĐỊNHSỐ298/CPNGÀY11THÁNG11NĂM1977CỦA"
+    },
+    {
+      "title": "Quyết định số: 2155/QĐ-ĐHTN ngày 24 tháng 11 năm 2025 của Hiệu trưởng Trường Đại",
+      "doc_type": "external",
+      "external": true,
+      "id": "ext::QUYẾTĐỊNHSỐ:2155/QĐ-ĐHTNNGÀY24THÁNG11NĂM"
+    },
+    {
+      "title": "Quyết định số:     826/QĐ-ĐHTN",
+      "doc_type": "external",
+      "external": true,
+      "id": "ext::QUYẾTĐỊNHSỐ:826/QĐ-ĐHTN"
+    },
+    {
+      "title": "Quyết định này “Quy định so chuẩn",
+      "doc_type": "external",
+      "external": true,
+      "id": "ext::QUYẾTĐỊNHNÀY“QUYĐỊNHSOCHUẨN"
+    },
+    {
+      "title": "Luật Giáo dục đại học ngày 10 tháng 12 năm 2025",
+      "doc_type": "external",
+      "external": true,
+      "id": "ext::LUẬTGIÁODỤCĐẠIHỌCNGÀY10THÁNG12NĂM2025"
+    },
+    {
+      "title": "12/2017/TT-BGD",
+      "doc_type": "external",
+      "external": true,
+      "id": "ext::12/2017/TT-BGD"
+    },
+    {
+      "title": "Nghị quyết số 35",
+      "doc_type": "external",
+      "external": true,
+      "id": "ext::NGHỊQUYẾTSỐ35"
+    },
+    {
+      "title": "Nghị quyết số 71-NQ/TW ngày 22 tháng 8 năm 2025 của Bộ Chính trị về đột phá phát",
+      "doc_type": "external",
+      "external": true,
+      "id": "ext::NGHỊQUYẾTSỐ71-NQ/TWNGÀY22THÁNG8NĂM2025CỦ"
+    },
+    {
+      "title": "Nghị quyết số 281/NQ-CP ngày 15 tháng 9 năm 2025 của Chính phủ ban hành Chương t",
+      "doc_type": "external",
+      "external": true,
+      "id": "ext::NGHỊQUYẾTSỐ281/NQ-CPNGÀY15THÁNG9NĂM2025C"
+    },
+    {
+      "title": "125/2025/QH15",
+      "doc_type": "external",
+      "external": true,
+      "id": "ext::125/2025/QH15"
+    },
+    {
+      "title": "Quyết định số 78/QĐ-TTg ngày 14 tháng 01 năm 2022 của Thủ tướng Chính phủ về việ",
+      "doc_type": "external",
+      "external": true,
+      "id": "ext::QUYẾTĐỊNHSỐ78/QĐ-TTGNGÀY14THÁNG01NĂM2022"
+    },
+    {
+      "title": "Quy định hoạt động đảm bảo chất lượng năm 2019",
+      "doc_type": "external",
+      "external": true,
+      "id": "ext::QUYĐỊNHHOẠTĐỘNGĐẢMBẢOCHẤTLƯỢNGNĂM2019"
+    },
+    {
+      "title": "Thông tư này Chuẩn cơ sở giáo dục đại học",
+      "doc_type": "external",
+      "external": true,
+      "id": "ext::THÔNGTƯNÀYCHUẨNCƠSỞGIÁODỤCĐẠIHỌC"
+    },
+    {
+      "title": "Luật Giáo dục đại học ngày 18 tháng 6 năm 2012",
+      "doc_type": "external",
+      "external": true,
+      "id": "ext::LUẬTGIÁODỤCĐẠIHỌCNGÀY18THÁNG6NĂM2012"
+    },
+    {
+      "title": "Luật sửa đổi",
+      "doc_type": "external",
+      "external": true,
+      "id": "ext::LUẬTSỬAĐỔI"
+    },
+    {
+      "title": "99/2019/NĐ-CP",
+      "doc_type": "external",
+      "external": true,
+      "id": "ext::99/2019/NĐ-CP"
+    },
+    {
+      "title": "cho các Thông tư liên quan về kiểm định chương trình đào tạo đại học hiện hành",
+      "doc_type": "external",
+      "external": true,
+      "id": "ext::CHOCÁCTHÔNGTƯLIÊNQUANVỀKIỂMĐỊNHCHƯƠNGTRÌ"
+    }
+  ],
+  "links": [
+    {
+      "rel_type": "CAN_CU_NGOAI",
+      "ref_text": "Hiến pháp nước Cộng hòa xã hội chủ nghĩa Việt Nam đã được sửa đổi",
+      "source": "Luat_Giao_duc_Dai_hoc_125_2025",
+      "target": "ext::HIẾNPHÁPNƯỚCCỘNGHÒAXÃHỘICHỦNGHĨAVIỆTNAMĐ"
+    },
+    {
+      "rel_type": "CAN_CU_NGOAI",
+      "ref_text": "203/2025/QH15",
+      "source": "Luat_Giao_duc_Dai_hoc_125_2025",
+      "target": "ext::203/2025/QH15"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Cơ sở giáo dục đại học",
+      "source": "Luat_Giao_duc_Dai_hoc_125_2025",
+      "target": "Nghi_dinh_91_2026"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Cơ sở giáo dục đại học",
+      "source": "Luat_Giao_duc_Dai_hoc_125_2025",
+      "target": "Thong_tu_01_2024__Ve_ban_hanh_Chuan_CSGD"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Cơ sở giáo dục đại học",
+      "source": "Luat_Giao_duc_Dai_hoc_125_2025",
+      "target": "Thong_tu_20_2026_Ve_kiem__U0111inh_CSGD"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Cơ sở giáo dục đại học",
+      "source": "Luat_Giao_duc_Dai_hoc_125_2025",
+      "target": "THÔNG_TƯ_MỚI__Thông_tư_20_2026_TT-BGDĐT_về_kiểm_định_chất_lư"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Cơ sở giáo dục đại học",
+      "source": "Luat_Giao_duc_Dai_hoc_125_2025",
+      "target": "Thông_tư_số_04_2025_TT-BGDĐT_quy_định_về_kiểm_định_chương_tr"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Luật Giáo dục đại học",
+      "source": "Luat_Giao_duc_Dai_hoc_125_2025",
+      "target": "Thong_tu_04_2025_Ve_kiem_dinh_CTDT"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Chương trình đào tạo",
+      "source": "Luat_Giao_duc_Dai_hoc_125_2025",
+      "target": "Quy_dinh__So_chuan__doi_sanh_chat_luong_giao_duc_Truong_DHTN"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Chương trình đào tạo",
+      "source": "Luat_Giao_duc_Dai_hoc_125_2025",
+      "target": "Quy_dinh_He_thong_bao_dam_chat_luong_ben_trong_truong_Dai_ho"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Cộng đồng",
+      "source": "Luat_Giao_duc_Dai_hoc_125_2025",
+      "target": "Trường_Đại_học_Tây_Nguyên_ban_hành_Quy_định_về_Hệ_thống_bảo_"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giảng viên",
+      "source": "Luat_Giao_duc_Dai_hoc_125_2025",
+      "target": "Chương_I"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Người học",
+      "source": "Luat_Giao_duc_Dai_hoc_125_2025",
+      "target": "_Nâng_tầm_Khung_trình_độ_quốc_gia__VQF___AQRF__Dấu_mốc_vàng_"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giáo dục đại học",
+      "source": "Luat_Giao_duc_Dai_hoc_125_2025",
+      "target": "Hội_thảo_khoa_học__Bảo_đảm_và_Kiểm_định_chất_lượng_giáo_dục_"
+    },
+    {
+      "rel_type": "CAN_CU_NGOAI",
+      "ref_text": "43/2019/QH14",
+      "source": "Nghi_dinh_91_2026",
+      "target": "ext::43/2019/QH14"
+    },
+    {
+      "rel_type": "CAN_CU",
+      "ref_text": "125/2025/QH15",
+      "source": "Nghi_dinh_91_2026",
+      "target": "Quy_dinh_He_thong_bao_dam_chat_luong_ben_trong_truong_Dai_ho"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Cơ sở giáo dục đại học",
+      "source": "Nghi_dinh_91_2026",
+      "target": "Luat_Giao_duc_Dai_hoc_125_2025"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Cơ sở giáo dục đại học",
+      "source": "Nghi_dinh_91_2026",
+      "target": "Thong_tu_01_2024__Ve_ban_hanh_Chuan_CSGD"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Cơ sở giáo dục đại học",
+      "source": "Nghi_dinh_91_2026",
+      "target": "Thong_tu_20_2026_Ve_kiem__U0111inh_CSGD"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Cơ sở giáo dục đại học",
+      "source": "Nghi_dinh_91_2026",
+      "target": "THÔNG_TƯ_MỚI__Thông_tư_20_2026_TT-BGDĐT_về_kiểm_định_chất_lư"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Cơ sở giáo dục đại học",
+      "source": "Nghi_dinh_91_2026",
+      "target": "Thông_tư_số_04_2025_TT-BGDĐT_quy_định_về_kiểm_định_chương_tr"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Luật Giáo dục đại học",
+      "source": "Nghi_dinh_91_2026",
+      "target": "Thong_tu_04_2025_Ve_kiem_dinh_CTDT"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Bộ Giáo dục và Đào tạo",
+      "source": "Nghi_dinh_91_2026",
+      "target": "Chương_I"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giáo dục đại học",
+      "source": "Nghi_dinh_91_2026",
+      "target": "Quy_dinh__So_chuan__doi_sanh_chat_luong_giao_duc_Truong_DHTN"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giáo dục đại học",
+      "source": "Nghi_dinh_91_2026",
+      "target": "Trường_Đại_học_Tây_Nguyên_ban_hành_Quy_định_về_Hệ_thống_bảo_"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giáo dục đại học",
+      "source": "Nghi_dinh_91_2026",
+      "target": "_Nâng_tầm_Khung_trình_độ_quốc_gia__VQF___AQRF__Dấu_mốc_vàng_"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giáo dục đại học",
+      "source": "Nghi_dinh_91_2026",
+      "target": "Hội_thảo_khoa_học__Bảo_đảm_và_Kiểm_định_chất_lượng_giáo_dục_"
+    },
+    {
+      "rel_type": "CAN_CU_NGOAI",
+      "ref_text": "Luật Giáo dục đại học năm 2012",
+      "source": "Chương_I",
+      "target": "ext::LUẬTGIÁODỤCĐẠIHỌCNĂM2012"
+    },
+    {
+      "rel_type": "CAN_CU_NGOAI",
+      "ref_text": "Quyết định này “Quy định về công tác Khảo thí của Trường Đại học Tây Nguyên”",
+      "source": "Chương_I",
+      "target": "ext::QUYẾTĐỊNHNÀY“QUYĐỊNHVỀCÔNGTÁCKHẢOTHÍCỦAT"
+    },
+    {
+      "rel_type": "CAN_CU_NGOAI",
+      "ref_text": "Quyết định số 298/CP ngày 11 tháng 11 năm 1977 của Hội đồng Chính phủ về việc th",
+      "source": "Chương_I",
+      "target": "ext::QUYẾTĐỊNHSỐ298/CPNGÀY11THÁNG11NĂM1977CỦA"
+    },
+    {
+      "rel_type": "CAN_CU_NGOAI",
+      "ref_text": "Quyết định số: 2155/QĐ-ĐHTN ngày 24 tháng 11 năm 2025 của Hiệu trưởng Trường Đại",
+      "source": "Chương_I",
+      "target": "ext::QUYẾTĐỊNHSỐ:2155/QĐ-ĐHTNNGÀY24THÁNG11NĂM"
+    },
+    {
+      "rel_type": "CAN_CU",
+      "ref_text": "04/2025/TT-BGD",
+      "source": "Chương_I",
+      "target": "Thông_tư_số_04_2025_TT-BGDĐT_quy_định_về_kiểm_định_chương_tr"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giảng viên",
+      "source": "Chương_I",
+      "target": "Luat_Giao_duc_Dai_hoc_125_2025"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giảng viên",
+      "source": "Chương_I",
+      "target": "Quy_dinh__So_chuan__doi_sanh_chat_luong_giao_duc_Truong_DHTN"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giảng viên",
+      "source": "Chương_I",
+      "target": "Thong_tu_01_2024__Ve_ban_hanh_Chuan_CSGD"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giảng viên",
+      "source": "Chương_I",
+      "target": "Thong_tu_04_2025_Ve_kiem_dinh_CTDT"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giảng viên",
+      "source": "Chương_I",
+      "target": "Thong_tu_20_2026_Ve_kiem__U0111inh_CSGD"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Người học",
+      "source": "Chương_I",
+      "target": "Quy_dinh_He_thong_bao_dam_chat_luong_ben_trong_truong_Dai_ho"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Người học",
+      "source": "Chương_I",
+      "target": "Trường_Đại_học_Tây_Nguyên_ban_hành_Quy_định_về_Hệ_thống_bảo_"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Người học",
+      "source": "Chương_I",
+      "target": "_Nâng_tầm_Khung_trình_độ_quốc_gia__VQF___AQRF__Dấu_mốc_vàng_"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Bộ Giáo dục và Đào tạo",
+      "source": "Chương_I",
+      "target": "Nghi_dinh_91_2026"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Bộ Giáo dục và Đào tạo",
+      "source": "Chương_I",
+      "target": "THÔNG_TƯ_MỚI__Thông_tư_20_2026_TT-BGDĐT_về_kiểm_định_chất_lư"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giáo dục đại học",
+      "source": "Chương_I",
+      "target": "Hội_thảo_khoa_học__Bảo_đảm_và_Kiểm_định_chất_lượng_giáo_dục_"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Trường Đại học Tây Nguyên",
+      "source": "Chương_I",
+      "target": "Trường_Đại_học_Tây_Nguyên_phối_hợp_tổ_chức_Workshop_2_về_ứng"
+    },
+    {
+      "rel_type": "CAN_CU_NGOAI",
+      "ref_text": "Quyết định số:     826/QĐ-ĐHTN",
+      "source": "Quy_dinh__So_chuan__doi_sanh_chat_luong_giao_duc_Truong_DHTN",
+      "target": "ext::QUYẾTĐỊNHSỐ:826/QĐ-ĐHTN"
+    },
+    {
+      "rel_type": "CAN_CU",
+      "ref_text": "20/2026/TT-BGD",
+      "source": "Quy_dinh__So_chuan__doi_sanh_chat_luong_giao_duc_Truong_DHTN",
+      "target": "THÔNG_TƯ_MỚI__Thông_tư_20_2026_TT-BGDĐT_về_kiểm_định_chất_lư"
+    },
+    {
+      "rel_type": "CAN_CU_NGOAI",
+      "ref_text": "Quyết định này “Quy định so chuẩn",
+      "source": "Quy_dinh__So_chuan__doi_sanh_chat_luong_giao_duc_Truong_DHTN",
+      "target": "ext::QUYẾTĐỊNHNÀY“QUYĐỊNHSOCHUẨN"
+    },
+    {
+      "rel_type": "CAN_CU_NGOAI",
+      "ref_text": "Quyết định số 298/CP ngày 11 tháng 11 năm 1977 của Hội đồng Chính phủ về việc th",
+      "source": "Quy_dinh__So_chuan__doi_sanh_chat_luong_giao_duc_Truong_DHTN",
+      "target": "ext::QUYẾTĐỊNHSỐ298/CPNGÀY11THÁNG11NĂM1977CỦA"
+    },
+    {
+      "rel_type": "CAN_CU_NGOAI",
+      "ref_text": "Luật Giáo dục đại học ngày 10 tháng 12 năm 2025",
+      "source": "Quy_dinh__So_chuan__doi_sanh_chat_luong_giao_duc_Truong_DHTN",
+      "target": "ext::LUẬTGIÁODỤCĐẠIHỌCNGÀY10THÁNG12NĂM2025"
+    },
+    {
+      "rel_type": "CAN_CU",
+      "ref_text": "01/2024/TT-BGD",
+      "source": "Quy_dinh__So_chuan__doi_sanh_chat_luong_giao_duc_Truong_DHTN",
+      "target": "Thong_tu_01_2024__Ve_ban_hanh_Chuan_CSGD"
+    },
+    {
+      "rel_type": "CAN_CU",
+      "ref_text": "04/2025/TT-BGD",
+      "source": "Quy_dinh__So_chuan__doi_sanh_chat_luong_giao_duc_Truong_DHTN",
+      "target": "Thông_tư_số_04_2025_TT-BGDĐT_quy_định_về_kiểm_định_chương_tr"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Chương trình đào tạo",
+      "source": "Quy_dinh__So_chuan__doi_sanh_chat_luong_giao_duc_Truong_DHTN",
+      "target": "Luat_Giao_duc_Dai_hoc_125_2025"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Chương trình đào tạo",
+      "source": "Quy_dinh__So_chuan__doi_sanh_chat_luong_giao_duc_Truong_DHTN",
+      "target": "Quy_dinh_He_thong_bao_dam_chat_luong_ben_trong_truong_Dai_ho"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Chương trình đào tạo",
+      "source": "Quy_dinh__So_chuan__doi_sanh_chat_luong_giao_duc_Truong_DHTN",
+      "target": "Thong_tu_04_2025_Ve_kiem_dinh_CTDT"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Chương trình đào tạo",
+      "source": "Quy_dinh__So_chuan__doi_sanh_chat_luong_giao_duc_Truong_DHTN",
+      "target": "Thong_tu_20_2026_Ve_kiem__U0111inh_CSGD"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giảng viên",
+      "source": "Quy_dinh__So_chuan__doi_sanh_chat_luong_giao_duc_Truong_DHTN",
+      "target": "Chương_I"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Người học",
+      "source": "Quy_dinh__So_chuan__doi_sanh_chat_luong_giao_duc_Truong_DHTN",
+      "target": "Trường_Đại_học_Tây_Nguyên_ban_hành_Quy_định_về_Hệ_thống_bảo_"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Người học",
+      "source": "Quy_dinh__So_chuan__doi_sanh_chat_luong_giao_duc_Truong_DHTN",
+      "target": "_Nâng_tầm_Khung_trình_độ_quốc_gia__VQF___AQRF__Dấu_mốc_vàng_"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giáo dục đại học",
+      "source": "Quy_dinh__So_chuan__doi_sanh_chat_luong_giao_duc_Truong_DHTN",
+      "target": "Nghi_dinh_91_2026"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giáo dục đại học",
+      "source": "Quy_dinh__So_chuan__doi_sanh_chat_luong_giao_duc_Truong_DHTN",
+      "target": "Hội_thảo_khoa_học__Bảo_đảm_và_Kiểm_định_chất_lượng_giáo_dục_"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Trường Đại học Tây Nguyên",
+      "source": "Quy_dinh__So_chuan__doi_sanh_chat_luong_giao_duc_Truong_DHTN",
+      "target": "Trường_Đại_học_Tây_Nguyên_phối_hợp_tổ_chức_Workshop_2_về_ứng"
+    },
+    {
+      "rel_type": "CAN_CU_NGOAI",
+      "ref_text": "12/2017/TT-BGD",
+      "source": "Quy_dinh_He_thong_bao_dam_chat_luong_ben_trong_truong_Dai_ho",
+      "target": "ext::12/2017/TT-BGD"
+    },
+    {
+      "rel_type": "CAN_CU_NGOAI",
+      "ref_text": "Nghị quyết số 35",
+      "source": "Quy_dinh_He_thong_bao_dam_chat_luong_ben_trong_truong_Dai_ho",
+      "target": "ext::NGHỊQUYẾTSỐ35"
+    },
+    {
+      "rel_type": "CAN_CU_NGOAI",
+      "ref_text": "Nghị quyết số 71-NQ/TW ngày 22 tháng 8 năm 2025 của Bộ Chính trị về đột phá phát",
+      "source": "Quy_dinh_He_thong_bao_dam_chat_luong_ben_trong_truong_Dai_ho",
+      "target": "ext::NGHỊQUYẾTSỐ71-NQ/TWNGÀY22THÁNG8NĂM2025CỦ"
+    },
+    {
+      "rel_type": "CAN_CU",
+      "ref_text": "20/2026/TT-BGD",
+      "source": "Quy_dinh_He_thong_bao_dam_chat_luong_ben_trong_truong_Dai_ho",
+      "target": "THÔNG_TƯ_MỚI__Thông_tư_20_2026_TT-BGDĐT_về_kiểm_định_chất_lư"
+    },
+    {
+      "rel_type": "CAN_CU_NGOAI",
+      "ref_text": "Quyết định số 298/CP ngày 11 tháng 11 năm 1977 của Hội đồng Chính phủ về việc th",
+      "source": "Quy_dinh_He_thong_bao_dam_chat_luong_ben_trong_truong_Dai_ho",
+      "target": "ext::QUYẾTĐỊNHSỐ298/CPNGÀY11THÁNG11NĂM1977CỦA"
+    },
+    {
+      "rel_type": "CAN_CU",
+      "ref_text": "01/2024/TT-BGD",
+      "source": "Quy_dinh_He_thong_bao_dam_chat_luong_ben_trong_truong_Dai_ho",
+      "target": "Thong_tu_01_2024__Ve_ban_hanh_Chuan_CSGD"
+    },
+    {
+      "rel_type": "CAN_CU_NGOAI",
+      "ref_text": "Nghị quyết số 281/NQ-CP ngày 15 tháng 9 năm 2025 của Chính phủ ban hành Chương t",
+      "source": "Quy_dinh_He_thong_bao_dam_chat_luong_ben_trong_truong_Dai_ho",
+      "target": "ext::NGHỊQUYẾTSỐ281/NQ-CPNGÀY15THÁNG9NĂM2025C"
+    },
+    {
+      "rel_type": "CAN_CU",
+      "ref_text": "04/2025/TT-BGD",
+      "source": "Quy_dinh_He_thong_bao_dam_chat_luong_ben_trong_truong_Dai_ho",
+      "target": "Thông_tư_số_04_2025_TT-BGDĐT_quy_định_về_kiểm_định_chương_tr"
+    },
+    {
+      "rel_type": "CAN_CU_NGOAI",
+      "ref_text": "125/2025/QH15",
+      "source": "Quy_dinh_He_thong_bao_dam_chat_luong_ben_trong_truong_Dai_ho",
+      "target": "ext::125/2025/QH15"
+    },
+    {
+      "rel_type": "CAN_CU_NGOAI",
+      "ref_text": "Quyết định số 78/QĐ-TTg ngày 14 tháng 01 năm 2022 của Thủ tướng Chính phủ về việ",
+      "source": "Quy_dinh_He_thong_bao_dam_chat_luong_ben_trong_truong_Dai_ho",
+      "target": "ext::QUYẾTĐỊNHSỐ78/QĐ-TTGNGÀY14THÁNG01NĂM2022"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Chương trình đào tạo",
+      "source": "Quy_dinh_He_thong_bao_dam_chat_luong_ben_trong_truong_Dai_ho",
+      "target": "Luat_Giao_duc_Dai_hoc_125_2025"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Chương trình đào tạo",
+      "source": "Quy_dinh_He_thong_bao_dam_chat_luong_ben_trong_truong_Dai_ho",
+      "target": "Quy_dinh__So_chuan__doi_sanh_chat_luong_giao_duc_Truong_DHTN"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Chương trình đào tạo",
+      "source": "Quy_dinh_He_thong_bao_dam_chat_luong_ben_trong_truong_Dai_ho",
+      "target": "Thong_tu_04_2025_Ve_kiem_dinh_CTDT"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Chương trình đào tạo",
+      "source": "Quy_dinh_He_thong_bao_dam_chat_luong_ben_trong_truong_Dai_ho",
+      "target": "Thong_tu_20_2026_Ve_kiem__U0111inh_CSGD"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Người học",
+      "source": "Quy_dinh_He_thong_bao_dam_chat_luong_ben_trong_truong_Dai_ho",
+      "target": "Chương_I"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Người học",
+      "source": "Quy_dinh_He_thong_bao_dam_chat_luong_ben_trong_truong_Dai_ho",
+      "target": "Trường_Đại_học_Tây_Nguyên_ban_hành_Quy_định_về_Hệ_thống_bảo_"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Người học",
+      "source": "Quy_dinh_He_thong_bao_dam_chat_luong_ben_trong_truong_Dai_ho",
+      "target": "_Nâng_tầm_Khung_trình_độ_quốc_gia__VQF___AQRF__Dấu_mốc_vàng_"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Trường Đại học Tây Nguyên",
+      "source": "Quy_dinh_He_thong_bao_dam_chat_luong_ben_trong_truong_Dai_ho",
+      "target": "Hội_thảo_khoa_học__Bảo_đảm_và_Kiểm_định_chất_lượng_giáo_dục_"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Trường Đại học Tây Nguyên",
+      "source": "Quy_dinh_He_thong_bao_dam_chat_luong_ben_trong_truong_Dai_ho",
+      "target": "Trường_Đại_học_Tây_Nguyên_phối_hợp_tổ_chức_Workshop_2_về_ứng"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Vùng lãnh thổ",
+      "source": "Quy_dinh_He_thong_bao_dam_chat_luong_ben_trong_truong_Dai_ho",
+      "target": "Building_a_Data_Management_System_and_AI_Assistant_for_Quali"
+    },
+    {
+      "rel_type": "CAN_CU_NGOAI",
+      "ref_text": "Quy định hoạt động đảm bảo chất lượng năm 2019",
+      "source": "Trường_Đại_học_Tây_Nguyên_ban_hành_Quy_định_về_Hệ_thống_bảo_",
+      "target": "ext::QUYĐỊNHHOẠTĐỘNGĐẢMBẢOCHẤTLƯỢNGNĂM2019"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Cộng đồng",
+      "source": "Trường_Đại_học_Tây_Nguyên_ban_hành_Quy_định_về_Hệ_thống_bảo_",
+      "target": "Luat_Giao_duc_Dai_hoc_125_2025"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Cộng đồng",
+      "source": "Trường_Đại_học_Tây_Nguyên_ban_hành_Quy_định_về_Hệ_thống_bảo_",
+      "target": "Thong_tu_04_2025_Ve_kiem_dinh_CTDT"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Cộng đồng",
+      "source": "Trường_Đại_học_Tây_Nguyên_ban_hành_Quy_định_về_Hệ_thống_bảo_",
+      "target": "Thong_tu_20_2026_Ve_kiem__U0111inh_CSGD"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Người học",
+      "source": "Trường_Đại_học_Tây_Nguyên_ban_hành_Quy_định_về_Hệ_thống_bảo_",
+      "target": "Chương_I"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Người học",
+      "source": "Trường_Đại_học_Tây_Nguyên_ban_hành_Quy_định_về_Hệ_thống_bảo_",
+      "target": "Quy_dinh__So_chuan__doi_sanh_chat_luong_giao_duc_Truong_DHTN"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Người học",
+      "source": "Trường_Đại_học_Tây_Nguyên_ban_hành_Quy_định_về_Hệ_thống_bảo_",
+      "target": "Quy_dinh_He_thong_bao_dam_chat_luong_ben_trong_truong_Dai_ho"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Người học",
+      "source": "Trường_Đại_học_Tây_Nguyên_ban_hành_Quy_định_về_Hệ_thống_bảo_",
+      "target": "_Nâng_tầm_Khung_trình_độ_quốc_gia__VQF___AQRF__Dấu_mốc_vàng_"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Người học",
+      "source": "Trường_Đại_học_Tây_Nguyên_ban_hành_Quy_định_về_Hệ_thống_bảo_",
+      "target": "Thong_tu_01_2024__Ve_ban_hanh_Chuan_CSGD"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giáo dục đại học",
+      "source": "Trường_Đại_học_Tây_Nguyên_ban_hành_Quy_định_về_Hệ_thống_bảo_",
+      "target": "Nghi_dinh_91_2026"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giáo dục đại học",
+      "source": "Trường_Đại_học_Tây_Nguyên_ban_hành_Quy_định_về_Hệ_thống_bảo_",
+      "target": "Hội_thảo_khoa_học__Bảo_đảm_và_Kiểm_định_chất_lượng_giáo_dục_"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giáo dục đại học",
+      "source": "Trường_Đại_học_Tây_Nguyên_ban_hành_Quy_định_về_Hệ_thống_bảo_",
+      "target": "Thông_tư_số_04_2025_TT-BGDĐT_quy_định_về_kiểm_định_chương_tr"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Trường Đại học Tây Nguyên",
+      "source": "Trường_Đại_học_Tây_Nguyên_ban_hành_Quy_định_về_Hệ_thống_bảo_",
+      "target": "Trường_Đại_học_Tây_Nguyên_phối_hợp_tổ_chức_Workshop_2_về_ứng"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giáo viên",
+      "source": "Trường_Đại_học_Tây_Nguyên_ban_hành_Quy_định_về_Hệ_thống_bảo_",
+      "target": "Building_a_Data_Management_System_and_AI_Assistant_for_Quali"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "AUN-QA",
+      "source": "Trường_Đại_học_Tây_Nguyên_ban_hành_Quy_định_về_Hệ_thống_bảo_",
+      "target": "AUN-QA_IQA_Management_Toolkit__BỘ_CÔNG_CỤ_QUẢN_LÝ_BẢO_ĐẢM_CH"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Người học",
+      "source": "_Nâng_tầm_Khung_trình_độ_quốc_gia__VQF___AQRF__Dấu_mốc_vàng_",
+      "target": "Luat_Giao_duc_Dai_hoc_125_2025"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Người học",
+      "source": "_Nâng_tầm_Khung_trình_độ_quốc_gia__VQF___AQRF__Dấu_mốc_vàng_",
+      "target": "Chương_I"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Người học",
+      "source": "_Nâng_tầm_Khung_trình_độ_quốc_gia__VQF___AQRF__Dấu_mốc_vàng_",
+      "target": "Quy_dinh__So_chuan__doi_sanh_chat_luong_giao_duc_Truong_DHTN"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Người học",
+      "source": "_Nâng_tầm_Khung_trình_độ_quốc_gia__VQF___AQRF__Dấu_mốc_vàng_",
+      "target": "Quy_dinh_He_thong_bao_dam_chat_luong_ben_trong_truong_Dai_ho"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Người học",
+      "source": "_Nâng_tầm_Khung_trình_độ_quốc_gia__VQF___AQRF__Dấu_mốc_vàng_",
+      "target": "Trường_Đại_học_Tây_Nguyên_ban_hành_Quy_định_về_Hệ_thống_bảo_"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Người học",
+      "source": "_Nâng_tầm_Khung_trình_độ_quốc_gia__VQF___AQRF__Dấu_mốc_vàng_",
+      "target": "Thong_tu_01_2024__Ve_ban_hanh_Chuan_CSGD"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Người học",
+      "source": "_Nâng_tầm_Khung_trình_độ_quốc_gia__VQF___AQRF__Dấu_mốc_vàng_",
+      "target": "Thong_tu_04_2025_Ve_kiem_dinh_CTDT"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Người học",
+      "source": "_Nâng_tầm_Khung_trình_độ_quốc_gia__VQF___AQRF__Dấu_mốc_vàng_",
+      "target": "Thong_tu_20_2026_Ve_kiem__U0111inh_CSGD"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giáo dục đại học",
+      "source": "_Nâng_tầm_Khung_trình_độ_quốc_gia__VQF___AQRF__Dấu_mốc_vàng_",
+      "target": "Nghi_dinh_91_2026"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giáo dục đại học",
+      "source": "_Nâng_tầm_Khung_trình_độ_quốc_gia__VQF___AQRF__Dấu_mốc_vàng_",
+      "target": "Hội_thảo_khoa_học__Bảo_đảm_và_Kiểm_định_chất_lượng_giáo_dục_"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giáo dục đại học",
+      "source": "_Nâng_tầm_Khung_trình_độ_quốc_gia__VQF___AQRF__Dấu_mốc_vàng_",
+      "target": "Thông_tư_số_04_2025_TT-BGDĐT_quy_định_về_kiểm_định_chương_tr"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Báo cáo",
+      "source": "_Nâng_tầm_Khung_trình_độ_quốc_gia__VQF___AQRF__Dấu_mốc_vàng_",
+      "target": "Building_a_Data_Management_System_and_AI_Assistant_for_Quali"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "AUN-QA",
+      "source": "AUN-QA_IQA_Management_Toolkit__BỘ_CÔNG_CỤ_QUẢN_LÝ_BẢO_ĐẢM_CH",
+      "target": "Trường_Đại_học_Tây_Nguyên_ban_hành_Quy_định_về_Hệ_thống_bảo_"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Vùng lãnh thổ",
+      "source": "Building_a_Data_Management_System_and_AI_Assistant_for_Quali",
+      "target": "Quy_dinh_He_thong_bao_dam_chat_luong_ben_trong_truong_Dai_ho"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Vùng lãnh thổ",
+      "source": "Building_a_Data_Management_System_and_AI_Assistant_for_Quali",
+      "target": "Thong_tu_01_2024__Ve_ban_hanh_Chuan_CSGD"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Vùng lãnh thổ",
+      "source": "Building_a_Data_Management_System_and_AI_Assistant_for_Quali",
+      "target": "Thong_tu_04_2025_Ve_kiem_dinh_CTDT"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giáo viên",
+      "source": "Building_a_Data_Management_System_and_AI_Assistant_for_Quali",
+      "target": "Trường_Đại_học_Tây_Nguyên_ban_hành_Quy_định_về_Hệ_thống_bảo_"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Tên cụ thể",
+      "source": "Building_a_Data_Management_System_and_AI_Assistant_for_Quali",
+      "target": "Trường_Đại_học_Tây_Nguyên_phối_hợp_tổ_chức_Workshop_2_về_ứng"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Báo cáo",
+      "source": "Building_a_Data_Management_System_and_AI_Assistant_for_Quali",
+      "target": "_Nâng_tầm_Khung_trình_độ_quốc_gia__VQF___AQRF__Dấu_mốc_vàng_"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Báo cáo",
+      "source": "Building_a_Data_Management_System_and_AI_Assistant_for_Quali",
+      "target": "Thong_tu_20_2026_Ve_kiem__U0111inh_CSGD"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giáo dục đại học",
+      "source": "Hội_thảo_khoa_học__Bảo_đảm_và_Kiểm_định_chất_lượng_giáo_dục_",
+      "target": "Luat_Giao_duc_Dai_hoc_125_2025"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giáo dục đại học",
+      "source": "Hội_thảo_khoa_học__Bảo_đảm_và_Kiểm_định_chất_lượng_giáo_dục_",
+      "target": "Nghi_dinh_91_2026"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giáo dục đại học",
+      "source": "Hội_thảo_khoa_học__Bảo_đảm_và_Kiểm_định_chất_lượng_giáo_dục_",
+      "target": "Chương_I"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giáo dục đại học",
+      "source": "Hội_thảo_khoa_học__Bảo_đảm_và_Kiểm_định_chất_lượng_giáo_dục_",
+      "target": "Quy_dinh__So_chuan__doi_sanh_chat_luong_giao_duc_Truong_DHTN"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giáo dục đại học",
+      "source": "Hội_thảo_khoa_học__Bảo_đảm_và_Kiểm_định_chất_lượng_giáo_dục_",
+      "target": "Trường_Đại_học_Tây_Nguyên_ban_hành_Quy_định_về_Hệ_thống_bảo_"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giáo dục đại học",
+      "source": "Hội_thảo_khoa_học__Bảo_đảm_và_Kiểm_định_chất_lượng_giáo_dục_",
+      "target": "_Nâng_tầm_Khung_trình_độ_quốc_gia__VQF___AQRF__Dấu_mốc_vàng_"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giáo dục đại học",
+      "source": "Hội_thảo_khoa_học__Bảo_đảm_và_Kiểm_định_chất_lượng_giáo_dục_",
+      "target": "Thong_tu_01_2024__Ve_ban_hanh_Chuan_CSGD"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giáo dục đại học",
+      "source": "Hội_thảo_khoa_học__Bảo_đảm_và_Kiểm_định_chất_lượng_giáo_dục_",
+      "target": "Thong_tu_04_2025_Ve_kiem_dinh_CTDT"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giáo dục đại học",
+      "source": "Hội_thảo_khoa_học__Bảo_đảm_và_Kiểm_định_chất_lượng_giáo_dục_",
+      "target": "Thong_tu_20_2026_Ve_kiem__U0111inh_CSGD"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giáo dục đại học",
+      "source": "Hội_thảo_khoa_học__Bảo_đảm_và_Kiểm_định_chất_lượng_giáo_dục_",
+      "target": "Thông_tư_số_04_2025_TT-BGDĐT_quy_định_về_kiểm_định_chương_tr"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Trường Đại học Tây Nguyên",
+      "source": "Hội_thảo_khoa_học__Bảo_đảm_và_Kiểm_định_chất_lượng_giáo_dục_",
+      "target": "Quy_dinh_He_thong_bao_dam_chat_luong_ben_trong_truong_Dai_ho"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Trường Đại học Tây Nguyên",
+      "source": "Hội_thảo_khoa_học__Bảo_đảm_và_Kiểm_định_chất_lượng_giáo_dục_",
+      "target": "Trường_Đại_học_Tây_Nguyên_phối_hợp_tổ_chức_Workshop_2_về_ứng"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Trường Đại học Tây Nguyên",
+      "source": "Trường_Đại_học_Tây_Nguyên_phối_hợp_tổ_chức_Workshop_2_về_ứng",
+      "target": "Chương_I"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Trường Đại học Tây Nguyên",
+      "source": "Trường_Đại_học_Tây_Nguyên_phối_hợp_tổ_chức_Workshop_2_về_ứng",
+      "target": "Quy_dinh__So_chuan__doi_sanh_chat_luong_giao_duc_Truong_DHTN"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Trường Đại học Tây Nguyên",
+      "source": "Trường_Đại_học_Tây_Nguyên_phối_hợp_tổ_chức_Workshop_2_về_ứng",
+      "target": "Quy_dinh_He_thong_bao_dam_chat_luong_ben_trong_truong_Dai_ho"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Trường Đại học Tây Nguyên",
+      "source": "Trường_Đại_học_Tây_Nguyên_phối_hợp_tổ_chức_Workshop_2_về_ứng",
+      "target": "Trường_Đại_học_Tây_Nguyên_ban_hành_Quy_định_về_Hệ_thống_bảo_"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Trường Đại học Tây Nguyên",
+      "source": "Trường_Đại_học_Tây_Nguyên_phối_hợp_tổ_chức_Workshop_2_về_ứng",
+      "target": "Hội_thảo_khoa_học__Bảo_đảm_và_Kiểm_định_chất_lượng_giáo_dục_"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Tên cụ thể",
+      "source": "Trường_Đại_học_Tây_Nguyên_phối_hợp_tổ_chức_Workshop_2_về_ứng",
+      "target": "Building_a_Data_Management_System_and_AI_Assistant_for_Quali"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Tên cụ thể",
+      "source": "Trường_Đại_học_Tây_Nguyên_phối_hợp_tổ_chức_Workshop_2_về_ứng",
+      "target": "Thong_tu_01_2024__Ve_ban_hanh_Chuan_CSGD"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "các bên liên quan",
+      "source": "Trường_Đại_học_Tây_Nguyên_phối_hợp_tổ_chức_Workshop_2_về_ứng",
+      "target": "Thong_tu_20_2026_Ve_kiem__U0111inh_CSGD"
+    },
+    {
+      "rel_type": "CAN_CU_NGOAI",
+      "ref_text": "Thông tư này Chuẩn cơ sở giáo dục đại học",
+      "source": "Thong_tu_01_2024__Ve_ban_hanh_Chuan_CSGD",
+      "target": "ext::THÔNGTƯNÀYCHUẨNCƠSỞGIÁODỤCĐẠIHỌC"
+    },
+    {
+      "rel_type": "CAN_CU_NGOAI",
+      "ref_text": "Luật Giáo dục đại học ngày 18 tháng 6 năm 2012",
+      "source": "Thong_tu_01_2024__Ve_ban_hanh_Chuan_CSGD",
+      "target": "ext::LUẬTGIÁODỤCĐẠIHỌCNGÀY18THÁNG6NĂM2012"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Cơ sở giáo dục đại học",
+      "source": "Thong_tu_01_2024__Ve_ban_hanh_Chuan_CSGD",
+      "target": "Luat_Giao_duc_Dai_hoc_125_2025"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Cơ sở giáo dục đại học",
+      "source": "Thong_tu_01_2024__Ve_ban_hanh_Chuan_CSGD",
+      "target": "Nghi_dinh_91_2026"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Cơ sở giáo dục đại học",
+      "source": "Thong_tu_01_2024__Ve_ban_hanh_Chuan_CSGD",
+      "target": "Thong_tu_20_2026_Ve_kiem__U0111inh_CSGD"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Cơ sở giáo dục đại học",
+      "source": "Thong_tu_01_2024__Ve_ban_hanh_Chuan_CSGD",
+      "target": "THÔNG_TƯ_MỚI__Thông_tư_20_2026_TT-BGDĐT_về_kiểm_định_chất_lư"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Cơ sở giáo dục đại học",
+      "source": "Thong_tu_01_2024__Ve_ban_hanh_Chuan_CSGD",
+      "target": "Thông_tư_số_04_2025_TT-BGDĐT_quy_định_về_kiểm_định_chương_tr"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Luật Giáo dục đại học",
+      "source": "Thong_tu_01_2024__Ve_ban_hanh_Chuan_CSGD",
+      "target": "Thong_tu_04_2025_Ve_kiem_dinh_CTDT"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giảng viên",
+      "source": "Thong_tu_01_2024__Ve_ban_hanh_Chuan_CSGD",
+      "target": "Chương_I"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Người học",
+      "source": "Thong_tu_01_2024__Ve_ban_hanh_Chuan_CSGD",
+      "target": "Trường_Đại_học_Tây_Nguyên_ban_hành_Quy_định_về_Hệ_thống_bảo_"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Người học",
+      "source": "Thong_tu_01_2024__Ve_ban_hanh_Chuan_CSGD",
+      "target": "_Nâng_tầm_Khung_trình_độ_quốc_gia__VQF___AQRF__Dấu_mốc_vàng_"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giáo dục đại học",
+      "source": "Thong_tu_01_2024__Ve_ban_hanh_Chuan_CSGD",
+      "target": "Hội_thảo_khoa_học__Bảo_đảm_và_Kiểm_định_chất_lượng_giáo_dục_"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Vùng lãnh thổ",
+      "source": "Thong_tu_01_2024__Ve_ban_hanh_Chuan_CSGD",
+      "target": "Building_a_Data_Management_System_and_AI_Assistant_for_Quali"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Tên cụ thể",
+      "source": "Thong_tu_01_2024__Ve_ban_hanh_Chuan_CSGD",
+      "target": "Trường_Đại_học_Tây_Nguyên_phối_hợp_tổ_chức_Workshop_2_về_ứng"
+    },
+    {
+      "rel_type": "CAN_CU_NGOAI",
+      "ref_text": "Luật sửa đổi",
+      "source": "Thong_tu_04_2025_Ve_kiem_dinh_CTDT",
+      "target": "ext::LUẬTSỬAĐỔI"
+    },
+    {
+      "rel_type": "CAN_CU_NGOAI",
+      "ref_text": "99/2019/NĐ-CP",
+      "source": "Thong_tu_04_2025_Ve_kiem_dinh_CTDT",
+      "target": "ext::99/2019/NĐ-CP"
+    },
+    {
+      "rel_type": "CAN_CU_NGOAI",
+      "ref_text": "Luật Giáo dục đại học ngày 18 tháng 6 năm 2012",
+      "source": "Thong_tu_04_2025_Ve_kiem_dinh_CTDT",
+      "target": "ext::LUẬTGIÁODỤCĐẠIHỌCNGÀY18THÁNG6NĂM2012"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Luật Giáo dục đại học",
+      "source": "Thong_tu_04_2025_Ve_kiem_dinh_CTDT",
+      "target": "Luat_Giao_duc_Dai_hoc_125_2025"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Luật Giáo dục đại học",
+      "source": "Thong_tu_04_2025_Ve_kiem_dinh_CTDT",
+      "target": "Nghi_dinh_91_2026"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Luật Giáo dục đại học",
+      "source": "Thong_tu_04_2025_Ve_kiem_dinh_CTDT",
+      "target": "Thong_tu_01_2024__Ve_ban_hanh_Chuan_CSGD"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Luật Giáo dục đại học",
+      "source": "Thong_tu_04_2025_Ve_kiem_dinh_CTDT",
+      "target": "Thong_tu_20_2026_Ve_kiem__U0111inh_CSGD"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Chương trình đào tạo",
+      "source": "Thong_tu_04_2025_Ve_kiem_dinh_CTDT",
+      "target": "Quy_dinh__So_chuan__doi_sanh_chat_luong_giao_duc_Truong_DHTN"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Chương trình đào tạo",
+      "source": "Thong_tu_04_2025_Ve_kiem_dinh_CTDT",
+      "target": "Quy_dinh_He_thong_bao_dam_chat_luong_ben_trong_truong_Dai_ho"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Cộng đồng",
+      "source": "Thong_tu_04_2025_Ve_kiem_dinh_CTDT",
+      "target": "Trường_Đại_học_Tây_Nguyên_ban_hành_Quy_định_về_Hệ_thống_bảo_"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giảng viên",
+      "source": "Thong_tu_04_2025_Ve_kiem_dinh_CTDT",
+      "target": "Chương_I"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Người học",
+      "source": "Thong_tu_04_2025_Ve_kiem_dinh_CTDT",
+      "target": "_Nâng_tầm_Khung_trình_độ_quốc_gia__VQF___AQRF__Dấu_mốc_vàng_"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Bộ Giáo dục và Đào tạo",
+      "source": "Thong_tu_04_2025_Ve_kiem_dinh_CTDT",
+      "target": "THÔNG_TƯ_MỚI__Thông_tư_20_2026_TT-BGDĐT_về_kiểm_định_chất_lư"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Bộ Giáo dục và Đào tạo",
+      "source": "Thong_tu_04_2025_Ve_kiem_dinh_CTDT",
+      "target": "Thông_tư_số_04_2025_TT-BGDĐT_quy_định_về_kiểm_định_chương_tr"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giáo dục đại học",
+      "source": "Thong_tu_04_2025_Ve_kiem_dinh_CTDT",
+      "target": "Hội_thảo_khoa_học__Bảo_đảm_và_Kiểm_định_chất_lượng_giáo_dục_"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Vùng lãnh thổ",
+      "source": "Thong_tu_04_2025_Ve_kiem_dinh_CTDT",
+      "target": "Building_a_Data_Management_System_and_AI_Assistant_for_Quali"
+    },
+    {
+      "rel_type": "CAN_CU_NGOAI",
+      "ref_text": "43/2019/QH14",
+      "source": "Thong_tu_20_2026_Ve_kiem__U0111inh_CSGD",
+      "target": "ext::43/2019/QH14"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "ref_text": "125/2025/QH15",
+      "entity": "Chương trình đào tạo",
+      "source": "Thong_tu_20_2026_Ve_kiem__U0111inh_CSGD",
+      "target": "Quy_dinh_He_thong_bao_dam_chat_luong_ben_trong_truong_Dai_ho"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Cơ sở giáo dục đại học",
+      "source": "Thong_tu_20_2026_Ve_kiem__U0111inh_CSGD",
+      "target": "Luat_Giao_duc_Dai_hoc_125_2025"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Cơ sở giáo dục đại học",
+      "source": "Thong_tu_20_2026_Ve_kiem__U0111inh_CSGD",
+      "target": "Nghi_dinh_91_2026"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Cơ sở giáo dục đại học",
+      "source": "Thong_tu_20_2026_Ve_kiem__U0111inh_CSGD",
+      "target": "Thong_tu_01_2024__Ve_ban_hanh_Chuan_CSGD"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Cơ sở giáo dục đại học",
+      "source": "Thong_tu_20_2026_Ve_kiem__U0111inh_CSGD",
+      "target": "THÔNG_TƯ_MỚI__Thông_tư_20_2026_TT-BGDĐT_về_kiểm_định_chất_lư"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Cơ sở giáo dục đại học",
+      "source": "Thong_tu_20_2026_Ve_kiem__U0111inh_CSGD",
+      "target": "Thông_tư_số_04_2025_TT-BGDĐT_quy_định_về_kiểm_định_chương_tr"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Luật Giáo dục đại học",
+      "source": "Thong_tu_20_2026_Ve_kiem__U0111inh_CSGD",
+      "target": "Thong_tu_04_2025_Ve_kiem_dinh_CTDT"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Chương trình đào tạo",
+      "source": "Thong_tu_20_2026_Ve_kiem__U0111inh_CSGD",
+      "target": "Quy_dinh__So_chuan__doi_sanh_chat_luong_giao_duc_Truong_DHTN"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Cộng đồng",
+      "source": "Thong_tu_20_2026_Ve_kiem__U0111inh_CSGD",
+      "target": "Trường_Đại_học_Tây_Nguyên_ban_hành_Quy_định_về_Hệ_thống_bảo_"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giảng viên",
+      "source": "Thong_tu_20_2026_Ve_kiem__U0111inh_CSGD",
+      "target": "Chương_I"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Người học",
+      "source": "Thong_tu_20_2026_Ve_kiem__U0111inh_CSGD",
+      "target": "_Nâng_tầm_Khung_trình_độ_quốc_gia__VQF___AQRF__Dấu_mốc_vàng_"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giáo dục đại học",
+      "source": "Thong_tu_20_2026_Ve_kiem__U0111inh_CSGD",
+      "target": "Hội_thảo_khoa_học__Bảo_đảm_và_Kiểm_định_chất_lượng_giáo_dục_"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Báo cáo",
+      "source": "Thong_tu_20_2026_Ve_kiem__U0111inh_CSGD",
+      "target": "Building_a_Data_Management_System_and_AI_Assistant_for_Quali"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "các bên liên quan",
+      "source": "Thong_tu_20_2026_Ve_kiem__U0111inh_CSGD",
+      "target": "Trường_Đại_học_Tây_Nguyên_phối_hợp_tổ_chức_Workshop_2_về_ứng"
+    },
+    {
+      "rel_type": "CAN_CU_NGOAI",
+      "ref_text": "12/2017/TT-BGD",
+      "source": "THÔNG_TƯ_MỚI__Thông_tư_20_2026_TT-BGDĐT_về_kiểm_định_chất_lư",
+      "target": "ext::12/2017/TT-BGD"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Cơ sở giáo dục đại học",
+      "source": "THÔNG_TƯ_MỚI__Thông_tư_20_2026_TT-BGDĐT_về_kiểm_định_chất_lư",
+      "target": "Luat_Giao_duc_Dai_hoc_125_2025"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Cơ sở giáo dục đại học",
+      "source": "THÔNG_TƯ_MỚI__Thông_tư_20_2026_TT-BGDĐT_về_kiểm_định_chất_lư",
+      "target": "Nghi_dinh_91_2026"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Cơ sở giáo dục đại học",
+      "source": "THÔNG_TƯ_MỚI__Thông_tư_20_2026_TT-BGDĐT_về_kiểm_định_chất_lư",
+      "target": "Thong_tu_01_2024__Ve_ban_hanh_Chuan_CSGD"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Cơ sở giáo dục đại học",
+      "source": "THÔNG_TƯ_MỚI__Thông_tư_20_2026_TT-BGDĐT_về_kiểm_định_chất_lư",
+      "target": "Thong_tu_20_2026_Ve_kiem__U0111inh_CSGD"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Cơ sở giáo dục đại học",
+      "source": "THÔNG_TƯ_MỚI__Thông_tư_20_2026_TT-BGDĐT_về_kiểm_định_chất_lư",
+      "target": "Thông_tư_số_04_2025_TT-BGDĐT_quy_định_về_kiểm_định_chương_tr"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Bộ Giáo dục và Đào tạo",
+      "source": "THÔNG_TƯ_MỚI__Thông_tư_20_2026_TT-BGDĐT_về_kiểm_định_chất_lư",
+      "target": "Chương_I"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Bộ Giáo dục và Đào tạo",
+      "source": "THÔNG_TƯ_MỚI__Thông_tư_20_2026_TT-BGDĐT_về_kiểm_định_chất_lư",
+      "target": "Thong_tu_04_2025_Ve_kiem_dinh_CTDT"
+    },
+    {
+      "rel_type": "CAN_CU_NGOAI",
+      "ref_text": "cho các Thông tư liên quan về kiểm định chương trình đào tạo đại học hiện hành",
+      "source": "Thông_tư_số_04_2025_TT-BGDĐT_quy_định_về_kiểm_định_chương_tr",
+      "target": "ext::CHOCÁCTHÔNGTƯLIÊNQUANVỀKIỂMĐỊNHCHƯƠNGTRÌ"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Cơ sở giáo dục đại học",
+      "source": "Thông_tư_số_04_2025_TT-BGDĐT_quy_định_về_kiểm_định_chương_tr",
+      "target": "Luat_Giao_duc_Dai_hoc_125_2025"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Cơ sở giáo dục đại học",
+      "source": "Thông_tư_số_04_2025_TT-BGDĐT_quy_định_về_kiểm_định_chương_tr",
+      "target": "Nghi_dinh_91_2026"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Cơ sở giáo dục đại học",
+      "source": "Thông_tư_số_04_2025_TT-BGDĐT_quy_định_về_kiểm_định_chương_tr",
+      "target": "Thong_tu_01_2024__Ve_ban_hanh_Chuan_CSGD"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Cơ sở giáo dục đại học",
+      "source": "Thông_tư_số_04_2025_TT-BGDĐT_quy_định_về_kiểm_định_chương_tr",
+      "target": "Thong_tu_20_2026_Ve_kiem__U0111inh_CSGD"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Cơ sở giáo dục đại học",
+      "source": "Thông_tư_số_04_2025_TT-BGDĐT_quy_định_về_kiểm_định_chương_tr",
+      "target": "THÔNG_TƯ_MỚI__Thông_tư_20_2026_TT-BGDĐT_về_kiểm_định_chất_lư"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Bộ Giáo dục và Đào tạo",
+      "source": "Thông_tư_số_04_2025_TT-BGDĐT_quy_định_về_kiểm_định_chương_tr",
+      "target": "Thong_tu_04_2025_Ve_kiem_dinh_CTDT"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giáo dục đại học",
+      "source": "Thông_tư_số_04_2025_TT-BGDĐT_quy_định_về_kiểm_định_chương_tr",
+      "target": "Trường_Đại_học_Tây_Nguyên_ban_hành_Quy_định_về_Hệ_thống_bảo_"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giáo dục đại học",
+      "source": "Thông_tư_số_04_2025_TT-BGDĐT_quy_định_về_kiểm_định_chương_tr",
+      "target": "_Nâng_tầm_Khung_trình_độ_quốc_gia__VQF___AQRF__Dấu_mốc_vàng_"
+    },
+    {
+      "rel_type": "SHARE_ENTITY",
+      "entity": "Giáo dục đại học",
+      "source": "Thông_tư_số_04_2025_TT-BGDĐT_quy_định_về_kiểm_định_chương_tr",
+      "target": "Hội_thảo_khoa_học__Bảo_đảm_và_Kiểm_định_chất_lượng_giáo_dục_"
+    }
+  ]
+}
