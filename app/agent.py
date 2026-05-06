@@ -9,23 +9,14 @@ GREETING_PATTERNS = [
     r"^.{1,3}$",  # quá ngắn < 3 ký tự
 ]
 
-GREETING_RESPONSE = """Xin chào! 👋 Tôi là trợ lý AI của **TNU-AIQA**.
+GREETING_RESPONSE = """Xin chào! 👋 Tôi là **Trợ lý TNU-AIQA** — hệ thống hỏi đáp về bảo đảm và kiểm định chất lượng giáo dục của Trường Đại học Tây Nguyên.
 
-Tôi có thể giúp bạn tra cứu thông tin về:
-- Thông tư về kiểm định chất lượng CTĐT
-- Thông tư về kiểm định chất lượng CSGD
-- Hệ thống bảo đảm chất lượng bên trong TNU
-- Tiêu chuẩn, tiêu chí AUN-QA 
-- ... 
+Hãy đặt câu hỏi, tôi sẽ cố gắng hỗ trợ bạn tốt nhất! 😊"""
 
-Bạn muốn hỏi gì về kiểm định chất lượng giáo dục?"""
+OFF_TOPIC_RESPONSE = """Xin lỗi, câu hỏi này nằm ngoài phạm vi hỗ trợ của tôi. 🙏
 
-NO_INFO_MSG = (
-    "Tôi không tìm thấy thông tin này trong tài liệu của TNU-AIQA. "
-    "Vui lòng liên hệ Phòng Quản lý Chất lượng để được hỗ trợ."
-)
+Tôi chuyên hỗ trợ các vấn đề liên quan đến **bảo đảm và kiểm định chất lượng giáo dục** tại TNU. Bạn có câu hỏi nào về lĩnh vực này không?"""
 
-# Câu hỏi không liên quan đến chủ đề
 OFF_TOPIC_KEYWORDS = [
     "thời tiết", "bóng đá", "phim", "nhạc", "game", "nấu ăn",
     "học phí", "điểm thi", "thời khóa biểu", "lịch học",
