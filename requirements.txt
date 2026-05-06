@@ -1,30 +1,29 @@
 fastapi==0.111.0
 uvicorn[standard]==0.29.0
 python-dotenv==1.0.1
-pydantic==2.7.1
+pydantic==2.7.4
 
-# LangChain
+# LangChain — pinned versions tương thích nhau
 langchain==0.2.16
 langchain-community==0.2.16
-langchain-core==0.2.38
+langchain-core==0.2.43
 langchain-groq==0.1.9
 langchain-google-genai==1.0.10
 langchain-huggingface==0.0.3
 langchain-text-splitters==0.2.1
-langchain-qdrant>=0.2.0
-qdrant-client>=1.9.0
+langchain-qdrant==0.2.0
 
 # LLM
 groq==0.9.0
 google-generativeai>=0.7.0
 
-# Knowledge Graph — lightweight (NetworkX thay Neo4j)
+# Knowledge Graph
 networkx==3.3
 
 # Retrieval
 rank-bm25==0.2.2
 flashrank==0.2.8
-# chromadb — replaced by qdrant-client
+qdrant-client>=1.9.0
 
 # Data Pipeline
 beautifulsoup4==4.12.3
