@@ -1,9 +1,13 @@
+# ============================================
+# APP dependencies — dùng trên Railway/cloud
+# KHÔNG bao gồm pipeline tools (unstructured...)
+# ============================================
 fastapi==0.111.0
 uvicorn[standard]==0.29.0
 python-dotenv==1.0.1
 pydantic==2.7.4
 
-# LangChain — pinned versions tương thích nhau
+# LangChain
 langchain==0.2.16
 langchain-community==0.2.16
 langchain-core==0.2.43
@@ -25,17 +29,10 @@ rank-bm25==0.2.2
 flashrank==0.2.8
 qdrant-client>=1.9.0
 
-# Data Pipeline
+# Data
 beautifulsoup4==4.12.3
 requests==2.32.2
-lxml>=5.0.0
-scikit-learn
-python-docx
-unstructured[docx]
 feedparser==6.0.11
-
-# UI
-streamlit>=1.35.0
 
 # Utils
 httpx==0.27.0

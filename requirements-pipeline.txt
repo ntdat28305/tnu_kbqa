@@ -1,0 +1,16 @@
+# ============================================
+# PIPELINE dependencies — chỉ dùng local
+# để chạy ingestion + build vector/KG
+# ============================================
+-r requirements.txt
+
+# Doc parsing
+unstructured[docx]
+python-docx
+lxml>=5.0.0
+
+# ML
+scikit-learn
+
+# Pipeline utils
+feedparser==6.0.11
