@@ -1,4 +1,4 @@
-<!-- TNU-AIQA Chatbot Widget -->
+<!-- TNU-AIQA Chatbot Widget v2.1 — Streaming -->
 <style>
 #tnu-chat-btn {
   position: fixed; bottom: 24px; right: 24px; z-index: 9999;
@@ -10,7 +10,7 @@
 #tnu-chat-btn:hover { transform: scale(1.1); }
 #tnu-chat-box {
   position: fixed; bottom: 90px; right: 24px; z-index: 9999;
-  width: 340px; height: 460px; border-radius: 12px;
+  width: 360px; height: 500px; border-radius: 12px;
   background: #fff; box-shadow: 0 8px 32px rgba(0,0,0,0.2);
   display: none; flex-direction: column; overflow: hidden;
   font-family: 'Open Sans', sans-serif;
@@ -24,9 +24,22 @@
   flex: 1; overflow-y: auto; padding: 12px;
   display: flex; flex-direction: column; gap: 8px;
 }
-.tnu-msg { padding: 8px 12px; border-radius: 8px; font-size: 13px; max-width: 85%; line-height: 1.5; }
+.tnu-msg {
+  padding: 8px 12px; border-radius: 8px; font-size: 13px;
+  max-width: 85%; line-height: 1.6; white-space: pre-wrap; word-break: break-word;
+}
 .tnu-msg.user { background: #0f3d66; color: #fff; align-self: flex-end; }
 .tnu-msg.bot  { background: #f0f4f8; color: #333; align-self: flex-start; }
+.tnu-msg.bot.streaming::after {
+  content: "▌";
+  display: inline;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+.tnu-sources {
+  font-size: 11px; color: #666; margin-top: 4px;
+  align-self: flex-start; max-width: 85%;
+}
 #tnu-chat-input-area {
   display: flex; padding: 10px; border-top: 1px solid #eee; gap: 8px;
 }
@@ -38,7 +51,9 @@
 #tnu-chat-send {
   background: #0f3d66; color: #fff; border: none;
   padding: 8px 14px; border-radius: 8px; cursor: pointer; font-size: 13px;
+  transition: opacity 0.2s;
 }
+#tnu-chat-send:disabled { opacity: 0.5; cursor: not-allowed; }
 </style>
 
 <button id="tnu-chat-btn" title="Hỏi về QLCL">💬</button>
@@ -59,22 +74,34 @@
 
 <script>
 (function() {
-  const API_URL = "https://tnukbqa-production.up.railway.app"; // ← đổi sau khi deploy
+  const API_BASE = 'https://tnukbqa-production.up.railway.app';
+  const STREAM_URL = API_BASE + '/chat/stream';
+  const CHAT_URL   = API_BASE + '/chat';
 
-  const btn   = document.getElementById("tnu-chat-btn");
-  const box   = document.getElementById("tnu-chat-box");
-  const close = document.getElementById("tnu-close");
-  const input = document.getElementById("tnu-chat-input");
-  const send  = document.getElementById("tnu-chat-send");
-  const msgs  = document.getElementById("tnu-chat-messages");
+  const btn   = document.getElementById('tnu-chat-btn');
+  const box   = document.getElementById('tnu-chat-box');
+  const close = document.getElementById('tnu-close');
+  const input = document.getElementById('tnu-chat-input');
+  const send  = document.getElementById('tnu-chat-send');
+  const msgs  = document.getElementById('tnu-chat-messages');
 
-  btn.onclick   = () => { box.style.display = "flex"; btn.style.display = "none"; };
-  close.onclick = () => { box.style.display = "none"; btn.style.display = "block"; };
+  btn.onclick   = () => { box.style.display = 'flex'; btn.style.display = 'none'; input.focus(); };
+  close.onclick = () => { box.style.display = 'none'; btn.style.display = 'block'; };
 
   function addMsg(text, role) {
-    const el = document.createElement("div");
-    el.className = "tnu-msg " + role;
+    const el = document.createElement('div');
+    el.className = 'tnu-msg ' + role;
     el.textContent = text;
+    msgs.appendChild(el);
+    msgs.scrollTop = msgs.scrollHeight;
+    return el;
+  }
+
+  function addSources(sources) {
+    if (!sources || !sources.length) return;
+    const el = document.createElement('div');
+    el.className = 'tnu-sources';
+    el.textContent = '📚 ' + sources.slice(0, 2).join(' • ');
     msgs.appendChild(el);
     msgs.scrollTop = msgs.scrollHeight;
   }
@@ -82,26 +109,80 @@
   async function sendMessage() {
     const q = input.value.trim();
     if (!q) return;
-    addMsg(q, "user");
-    input.value = "";
+
+    addMsg(q, 'user');
+    input.value = '';
     send.disabled = true;
-    addMsg("Đang tìm câu trả lời...", "bot");
+
+    const botEl = addMsg('', 'bot streaming');
 
     try {
-      const res = await fetch(API_URL, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
+      const res = await fetch(STREAM_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: q })
       });
-      const data = await res.json();
-      msgs.lastChild.textContent = data.answer;
+
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder();
+      let buffer = '';
+      let fullAnswer = '';
+      let sources = [];
+
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+
+        buffer += decoder.decode(value, { stream: true });
+        const lines = buffer.split('\n');
+        buffer = lines.pop();
+
+        for (const line of lines) {
+          if (!line.startsWith('data: ')) continue;
+          try {
+            const chunk = JSON.parse(line.slice(6));
+            if (chunk.type === 'token') {
+              fullAnswer += chunk.content;
+              botEl.textContent = fullAnswer;
+              msgs.scrollTop = msgs.scrollHeight;
+            } else if (chunk.type === 'done') {
+              sources = chunk.sources || [];
+              break;
+            } else if (chunk.type === 'error') {
+              fullAnswer = chunk.content || 'Có lỗi xảy ra.';
+              botEl.textContent = fullAnswer;
+            }
+          } catch(e) {}
+        }
+      }
+
+      botEl.classList.remove('streaming');
+      addSources(sources);
+
     } catch(e) {
-      msgs.lastChild.textContent = "Lỗi kết nối. Vui lòng thử lại!";
+      try {
+        const res  = await fetch(CHAT_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ message: q })
+        });
+        const data = await res.json();
+        botEl.classList.remove('streaming');
+        botEl.textContent = data.answer || 'Không có phản hồi.';
+        addSources(data.sources);
+      } catch(e2) {
+        botEl.classList.remove('streaming');
+        botEl.textContent = 'Lỗi kết nối. Vui lòng thử lại!';
+      }
     }
+
     send.disabled = false;
+    input.focus();
   }
 
   send.onclick = sendMessage;
-  input.addEventListener("keydown", e => { if (e.key === "Enter") sendMessage(); });
+  input.addEventListener('keydown', e => { if (e.key === 'Enter') sendMessage(); });
 })();
 </script>
