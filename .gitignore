@@ -1,0 +1,46 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+
+# Environment
+.env
+.env.local
+.env.production
+
+# Data (lớn, không commit)
+data/chroma_db/
+data/raw/
+data/processed/
+data/pdfs/
+data/blog_crawled/
+data/kg/knowledge_graph.json
+data/kg/doc_index.json
+*.pdf
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbbs.db
+
+# VS Code / IDE
+.vscode/
+*.code-workspace
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Model cache
+.cache/
+models/
+sentence_transformers/
